@@ -74,7 +74,6 @@ meta_exclude_set = {
     torch.Tensor.geqrf,  # MISSING aten::geqrf
     torch.Tensor.histc,  # MISSING aten::histc
     torch.Tensor.histogram,  # MISSING aten::histogram.bin_ct
-    torch.Tensor.index_select,  # MISSING aten::index_select
     torch.Tensor.inverse,  # MISSING aten::_local_scalar_dense
     torch.Tensor.is_set_to,  # MISSING aten::is_set_to
     torch.Tensor.isclose,  # MISSING aten::abs.out
@@ -231,7 +230,6 @@ meta_exclude_set = {
     torch._standard_gamma,  # MISSING aten::_standard_gamma
     torch._unique,  # MISSING aten::_unique
     torch._unique2,  # MISSING aten::_unique2
-    torch.abs,  # MISSING aten::abs.out
     torch.absolute,  # MISSING aten::abs.out
     torch.addbmm,  # MISSING aten::addbmm
     torch.angle,  # MISSING aten::angle
@@ -303,7 +301,6 @@ meta_exclude_set = {
     torch.histogramdd,  # MISSING aten::_histogramdd_bin_edges
     torch.index_select,  # MISSING aten::index_select
     torch.inner,  # MISSING aten::tensordot.out
-    torch.inverse,  # MISSING aten::_local_scalar_dense
     torch.isnan,  # MISSING aten::isnan
     torch.kthvalue,  # MISSING aten::kthvalue.values
     torch.layer_norm,  # MISSING aten::native_batch_norm
@@ -447,7 +444,6 @@ meta_exclude_set = {
 # so we can't use these to toggle expected failure.  Try to prioritize these
 overload_exclude_set = {
     torch.clamp,  # MISSING aten::clamp.Tensor
-    torch.max,  # MISSING aten::max
     torch.min,  # MISSING aten::min
     torch.nn.functional.interpolate,  # MISSING aten::upsample_nearest3d.vec
     torch.nn.functional.upsample_nearest,  # MISSING aten::upsample_nearest3d.vec
